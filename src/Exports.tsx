@@ -1,0 +1,11 @@
+export { Navbar } from './components/Navbar';
+export * from './assets/SVG';
+export { useTyper } from './hooks/useTyper';
+export { Hero } from './components/Hero';
+export { HR } from './components/HR';
+export { Skills } from './components/Skills';
+export { Works } from './components/Works';
+export { ReadMore } from './components/ReadMore';
+export { Education } from './components/Education';
+export { Contact } from './components/Contact';
+export { Footer } from './components/Footer';
