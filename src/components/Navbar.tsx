@@ -13,7 +13,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
   useEffect(() => {
     const favicon = document.getElementById("favicon")! as HTMLLinkElement;
     favicon.href = `${
-      isDark ? "/src/assets/images/Logo.svg" : "/src/assets/images/LogoLight.svg"
+      isDark ? "/images/Logo.svg" : "/images/LogoLight.svg"
     }`;
   }, [isDark]);
 
