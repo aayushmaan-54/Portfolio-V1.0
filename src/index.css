@@ -497,7 +497,7 @@ body {
 }
 
 .mainContainer {
-  background-image: url('../src/assets/images/noise.png');
+  background-image: url('/images/noise.png');
 }
 
 .blink {

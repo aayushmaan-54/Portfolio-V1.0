@@ -7,7 +7,7 @@ export const Works = () => {
       <div className="flex flex-wrap py-10 items-start justify-center gap-[10%] worksContainer">
 
         <div className="font-nb w-[300px] mb-14">
-          <img src={`${"/src/assets/images/projects/mausam.png"}`} alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
+          <img src="/images/projects/mausam.png" alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
           <div className="w-[300px] flex items-center justify-between">
             <h1>Mausam(मौसम)</h1>
             <p className="text-xs">
@@ -26,7 +26,7 @@ export const Works = () => {
 
 
         <div className="font-nb w-[300px] mb-14">
-          <img src={`${"/src/assets/images/projects/todo.png"}`} alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
+          <img src="/images/projects/todo.png" alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
           <div className="w-[300px] flex items-center justify-between">
             <h1>ToDo</h1>
             <p className="text-xs">
@@ -44,7 +44,7 @@ export const Works = () => {
         </div>
 
         <div className="font-nb w-[300px] mb-14">
-          <img src={`${"/src/assets/images/projects/npm.webp"}`} alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
+          <img src="/images/projects/npm.webp" alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
           <div className="w-[300px] flex items-center justify-between">
             <h1>TypeScript Toastify</h1>
             <p className="text-[#007ACC] text-xs">
@@ -62,7 +62,7 @@ export const Works = () => {
         </div>
 
         <div className="font-nb w-[300px] mb-14">
-          <img src={`${"/src/assets/images/projects/quiz.png"}`} alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
+          <img src="/images/projects/quiz.png" alt="Project photo" className="w-[300px] grayscale hover:grayscale-0 transition-all duration-500" />
           <div className="w-[300px] flex items-center justify-between">
             <h1>Flashcard Quiz App</h1>
             <p className="text-xs">
