@@ -14,7 +14,7 @@ export const Footer = () => {
         <div>
           <ul className="">
             <li className="underline underline-offset-4 decoration-4 dark:decoration-[#f5f4ef80] mb-2 dark:hover:decoration-[#f5efef] transition-colors duration-400 cursor-pointer resume decoration-[#2c2b2780] hover:decoration-[#2C2B27]">
-              <a href="https://aayushmaan-resume.vercel.app/" target="blank">Resume <span className="text-xl text-cherryRed">●</span></a>
+              <a href="https://drive.google.com/file/d/1hUJgb1pbvDKOmpfpEEVAnSONvp35pkq5/view?usp=sharing" target="blank">Resume <span className="text-xl text-cherryRed">●</span></a>
             </li>
             <li className="cursor-pointer mb-1"><a href="#about">About</a></li>
             <li className="cursor-pointer mb-1"><a href="#skills">Skills</a></li>
