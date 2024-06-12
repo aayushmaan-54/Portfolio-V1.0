@@ -103,7 +103,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id='contact'>
+    <section id='contact' className='none'>
       <HR text='Contact' />
       <div>
         <div className='relative text-[#F5F4EF] w-fit mx-auto'>

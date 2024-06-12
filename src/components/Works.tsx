@@ -2,7 +2,7 @@ import { HR, GitLink, NPM, ReadMore, Link } from "../Exports";
 
 export const Works = () => {
   return (
-    <section id="works">
+    <section id="works" className="none">
       <HR text="Works" />
       <div className="flex flex-wrap py-10 items-start justify-center gap-[10%] worksContainer">
 

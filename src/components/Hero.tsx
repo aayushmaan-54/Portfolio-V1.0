@@ -3,7 +3,7 @@ import { useTyper, HR, LinkedIn, X, Gmail, Github, ArrowDown } from "../Exports"
 export const Hero = () => {
 
   return (
-    <header id="about">
+    <header id="about" className="none">
       <HR text={"About"} />
       <div className="pl-24 heroContainer">
         <div className="pl-8 relative vtContainer">

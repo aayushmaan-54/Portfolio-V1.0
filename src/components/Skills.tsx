@@ -39,7 +39,7 @@ export const Skills = () => {
   }, [setTabPosition]);
 
   return (
-    <article className="mt-36 pb-16" id="skills">
+    <article className="mt-36 pb-16 none" id="skills">
       <HR text={"Skills"} />
       <div className="flex justify-end mr-20 mb-12 fullTab">
         <div className="inline-flex h-10 rounded-3xl backdrop-blur-sm bg-[#B8B5A9] relative tabs">

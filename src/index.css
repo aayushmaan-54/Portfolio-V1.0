@@ -89,7 +89,21 @@ html {
 
 body {
 	overflow-x: hidden;
+	cursor: url('/images/defaultCursor.png'), auto;
 }
+
+a, button, li svg, .cursor-pointer {
+	cursor: url('/images/pointerCursor.png'), pointer;
+}
+
+input[type="text"], textarea, input[type="email"] {
+	cursor: url('/images/textCursor.png'), text;
+}
+
+.cursor-vertical-text {
+	cursor: url('/images/defaultCursor.png'), auto;
+}
+
 
 .link {
 	line-height: 2;
@@ -500,6 +514,11 @@ body {
   background-image: url('/images/noise.png');
 }
 
+
+.noiseBG {
+  background-image: url('/images/noise.png');
+}
+
 .blink {
 	animation: blink 1s linear infinite;
 	animation-delay: 1000ms;
@@ -547,4 +566,12 @@ textarea {
 .worksContainer {
 	width: max(50vw, 300px);
 	margin: 0 auto;
+}
+
+.none {
+	@apply opacity-0 blur-[5px] transition-all duration-[0.5s];
+}
+
+.show {
+	@apply opacity-100 blur-0;
 }

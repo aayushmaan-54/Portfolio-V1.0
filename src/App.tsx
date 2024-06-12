@@ -24,9 +24,27 @@ const App = () => {
   }, [isDark]);
 
 
+  const hiddenEle = document.querySelectorAll('.none');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.add('none');
+        entry.target.classList.remove('show');
+      }
+    })
+  }, {
+    rootMargin: '-50px 0px'
+  });
+  
+  hiddenEle.forEach((el) => observer.observe(el));
+
+
   return (
     <main className={isDark ? 'dark' : ''}>
-      <div className="min-h-[100vh] w-screen dark:bg-main bg-lhtMain dark:text-primary text-main font-chi body bg-blend-difference pb-10 mainContainer">
+      <div className="min-h-[100vh] w-screen dark:bg-main bg-lhtMain dark:text-primary text-main font-chi body bg-blend-difference pb-10 mainContainer none">
         <Navbar isDark={isDark} setIsDark={setIsDark} />
         <Hero />
         <Skills />

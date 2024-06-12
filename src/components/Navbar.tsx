@@ -26,6 +26,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
     const body = document.querySelector("body")!;
     const hemMenu = document.querySelector(".hamburger")!;
     const menu = document.querySelector(".menuAll")!;
+    const ele = document.querySelectorAll('.none, .show');
 
     if (menuIsOpen) {
       hemMenu.classList.add("hamburgerClose");
@@ -34,6 +35,10 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
       nav.classList.add("block");
       nav.classList.remove("hidden");
       body.classList.add("max-h-screen", "overflow-hidden");
+      ele.forEach((el) => {
+        el.classList.remove('none');
+        el.classList.remove('show');
+      })
     } else {
       hemMenu.classList.remove("hamburgerClose");
       menu.classList.remove("menuOpen");
@@ -41,8 +46,12 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
       nav.classList.remove("block");
       nav.classList.add("hidden");
       body.classList.remove("max-h-screen", "overflow-hidden");
+      ele.forEach((el) => {
+        el.classList.add('opacity-100');
+      })
     }
   }, [menuIsOpen]);
+
 
   useEffect(() => {
     const links = document.querySelectorAll(".nav .link");
@@ -59,7 +68,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
   };
 
   return (
-    <nav className="flex items-center justify-between px-5 pt-2">
+    <nav className="flex items-center justify-between px-5 pt-2 none">
       <div className="cursor-pointer">
         <Logo />
       </div>

@@ -2,7 +2,7 @@ import { FooterStar } from "../Exports";
 
 export const Footer = () => {
   return (
-    <aside className="font-cnl">
+    <aside className="font-cnl none">
       <div className="hr-container relative my-8 mb-24" id="about">
         <div className="bg-main dark:bg-lhtMain w-full h-[1.5px]"></div>
         <div className="hr w-fit absolute right-[45.4%] bg-lhtMain dark:bg-main  top-[-665%] px-2 bg-[url('./src/assets/images/noise.png')] bg-blend-difference ">

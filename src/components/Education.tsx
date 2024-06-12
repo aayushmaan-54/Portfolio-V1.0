@@ -2,7 +2,7 @@ import { HR, TimeStamp, Book } from "../Exports";
 
 export const Education = () => {
   return (
-    <section id="education">
+    <section id="education" className="none">
       <HR text="Education" />
       <ol className="relative border-s-2 dark:border-[#41403D] border-[#99958a]  ml-10">
 
