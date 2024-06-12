@@ -27,6 +27,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
     const hemMenu = document.querySelector(".hamburger")!;
     const menu = document.querySelector(".menuAll")!;
     const ele = document.querySelectorAll('.none, .show');
+    
 
     if (menuIsOpen) {
       hemMenu.classList.add("hamburgerClose");
@@ -68,7 +69,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
   };
 
   return (
-    <nav className="flex items-center justify-between px-5 pt-2 none">
+    <nav className="flex items-center justify-between px-5 pt-2">
       <div className="cursor-pointer">
         <Logo />
       </div>
