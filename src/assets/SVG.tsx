@@ -839,8 +839,7 @@ export const Nodejs = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={"80px"}
-    height={"80px"}
+    className="size-20 skills"
     viewBox="0 0 256 289"
     preserveAspectRatio="xMidYMid"
   >
@@ -858,8 +857,7 @@ export const Express = () => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width={80}
-    height={80}
+    className="size-20 skills"
     viewBox="0 0 48 48"
   >
     <linearGradient
@@ -882,7 +880,12 @@ export const Express = () => (
 
 
 export const MongoDb = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="mongodb" height={80} width={80}>
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 128 128" 
+    id="mongodb" 
+    className="size-20 skills"
+  >
     <path
       fill="#4FAA41"
       fillRule="evenodd"

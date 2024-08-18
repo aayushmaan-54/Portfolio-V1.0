@@ -1,11 +1,11 @@
-import { useState, useRef, useEffect, useCallback } from "react";
-import { HR, React, TypeScript, TailwindCSS, SASS, Figma, GitHub, GitLab, Linux, Vim, VSCode, C, Cpp, Nodejs, Express, MongoDb } from "../Exports";
+import React, { useState, useRef, useEffect, useCallback } from "react";
+import { HR, React as ReactLogo, TypeScript, TailwindCSS, SASS, Figma, GitHub, GitLab, Linux, Vim, VSCode, C, Cpp, Nodejs, Express, MongoDb } from "../Exports";
 
 const allTabs = [
   {
     name: "Frontend",
     description: ["React.js", "TypeScript", "Tailwind CSS", "SASS", "Node.js", "Express.js", "MongoDb"],
-    Logo: [<React key="React" />, <TypeScript key="TypeScript" />, <TailwindCSS key="TailwindCSS" />, <SASS key="SASS" />, <Nodejs key="Node.js"/>, <Express key="Express"/>, <MongoDb key="MongoDb"/> ],
+    Logo: [<ReactLogo key="React" />, <TypeScript key="TypeScript" />, <TailwindCSS key="TailwindCSS" />, <SASS key="SASS" />, <Nodejs key="Node.js"/>, <Express key="Express"/>, <MongoDb key="MongoDb"/> ],
   },
   {
     name: "Tools",
@@ -39,7 +39,7 @@ export const Skills = () => {
   }, [setTabPosition]);
 
   return (
-    <article className="mt-36 pb-16 none" id="skills">
+    <article className="mt-36 pb-16 w-full" id="skills">
       <HR text={"Skills"} />
       <div className="flex justify-end mr-20 mb-12 fullTab">
         <div className="inline-flex h-10 rounded-3xl backdrop-blur-sm bg-[#B8B5A9] relative tabs">
@@ -65,14 +65,14 @@ export const Skills = () => {
         </div>
       </div>
       {activeTabIndex !== null && (
-        <div className="mt-4 font-nb mx-[10%]">
-          <div className="mb-4 flex gap-4 justify-center overflow-x-auto skillScrollbar">
+        <div className="mt-4 font-nb mx-[10%] overflow-x-auto skillScrollbar">
+          <div className="mb-4 flex gap-4 pb-4 min-w-max">
             {allTabs[activeTabIndex].description.map((desc, i) => (
-              <div className="flex flex-col items-center min-w-[80px] p-2" key={i}>
-                <div className="mb-1 bg-[#d3cfc2] dark:bg-[#2E2F2A] border-2 dark:border-[#41403D] border-[#99958a] rounded-xl p-2">
-                  {allTabs[activeTabIndex].Logo[i]}
+              <div className="flex flex-col items-center w-24 p-2" key={i}>
+                <div className="mb-1 bg-[#d3cfc2] dark:bg-[#2E2F2A] border-2 dark:border-[#41403D] border-[#99958a] rounded-xl p-2 size-20 flex items-center justify-center">
+                  {React.cloneElement(allTabs[activeTabIndex].Logo[i], { className: "w-10 h-10" })}
                 </div>
-                <span className="dark:text-[#B8B5A9] text-[#99958a] text-sm skillDesc">{desc}</span>
+                <span className="dark:text-[#B8B5A9] text-[#99958a] text-sm text-center mt-1 skillDesc">{desc}</span>
               </div>
             ))}
           </div>
