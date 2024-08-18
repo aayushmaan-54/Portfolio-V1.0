@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import { HR, React, TypeScript, TailwindCSS, SASS, Figma, GitHub, GitLab, Linux, Vim, VSCode, C, Cpp } from "../Exports";
+import { HR, React, TypeScript, TailwindCSS, SASS, Figma, GitHub, GitLab, Linux, Vim, VSCode, C, Cpp, Nodejs, Express, MongoDb } from "../Exports";
 
 const allTabs = [
   {
     name: "Frontend",
-    description: ["React.js", "TypeScript", "Tailwind CSS", "SASS"],
-    Logo: [<React key="React" />, <TypeScript key="TypeScript" />, <TailwindCSS key="TailwindCSS" />, <SASS key="SASS" />],
+    description: ["React.js", "TypeScript", "Tailwind CSS", "SASS", "Node.js", "Express.js", "MongoDb"],
+    Logo: [<React key="React" />, <TypeScript key="TypeScript" />, <TailwindCSS key="TailwindCSS" />, <SASS key="SASS" />, <Nodejs key="Node.js"/>, <Express key="Express"/>, <MongoDb key="MongoDb"/> ],
   },
   {
     name: "Tools",

@@ -76,7 +76,7 @@ export const Navbar = ({ isDark, setIsDark }: HeaderProps) => {
       <div className="font-cnl">
         <ul className="flex items-center justify-center gap-5">
           <li className="underline underline-offset-4 decoration-4 dark:decoration-[#f5f4ef80] mb-2 dark:hover:decoration-[#f5efef] transition-colors duration-400 cursor-pointer resume decoration-[#2c2b2780] hover:decoration-[#2C2B27]">
-            <a href="https://drive.google.com/file/d/1hUJgb1pbvDKOmpfpEEVAnSONvp35pkq5/view?usp=sharing" target="blank">
+            <a href="https://drive.google.com/file/d/1kaFYrbwFvZScqEvJab2vnIExqbRT9lN3/view?usp=sharing" target="blank">
               Resume <span className="text-xl text-cherryRed">●</span>
             </a>
           </li>
