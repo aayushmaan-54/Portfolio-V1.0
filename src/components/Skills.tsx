@@ -3,7 +3,7 @@ import { HR, React as ReactLogo, TypeScript, TailwindCSS, SASS, Figma, GitHub, G
 
 const allTabs = [
   {
-    name: "Frontend",
+    name: "Technologies",
     description: ["React.js", "TypeScript", "Tailwind CSS", "SASS", "Node.js", "Express.js", "MongoDb"],
     Logo: [<ReactLogo key="React" />, <TypeScript key="TypeScript" />, <TailwindCSS key="TailwindCSS" />, <SASS key="SASS" />, <Nodejs key="Node.js"/>, <Express key="Express"/>, <MongoDb key="MongoDb"/> ],
   },
