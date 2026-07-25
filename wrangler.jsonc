@@ -1,0 +1,11 @@
+{
+  // Static-asset-only Worker: no server code, just the Vite build output.
+  // Having this file also stops `wrangler deploy` from trying to auto-detect
+  // the framework, which requires Vite 6+ and fails on this project's Vite 5.
+  "name": "portfoliov1",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
